@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">codex-proxy protocol bridge</title>
+  <desc id="desc">A visual bridge connecting Codex CLI to Chinese model providers through Anthropic or OpenAI-compatible protocols.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#101828"/><stop offset="0.55" stop-color="#1d2b53"/><stop offset="1" stop-color="#1f7a8c"/></linearGradient>
+    <linearGradient id="card" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.07"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="1200" height="560" rx="34" fill="url(#bg)"/>
+  <circle cx="1030" cy="90" r="170" fill="#6ee7f9" opacity="0.12"/>
+  <circle cx="190" cy="480" r="210" fill="#a78bfa" opacity="0.12"/>
+  <text x="70" y="92" fill="#e6fffb" font-family="Inter,Segoe UI,Arial" font-size="48" font-weight="800">codex-proxy</text>
+  <text x="72" y="132" fill="#b7f5f0" font-family="Inter,Segoe UI,Arial" font-size="20">Codex CLI ⇄ Responses API ⇄ Chinese LLM ecosystem</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="220" width="230" height="150" rx="24" fill="url(#card)" stroke="#9ae6b4" stroke-opacity="0.45"/>
+    <text x="185" y="285" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="700">Codex CLI</text>
+    <text x="185" y="325" text-anchor="middle" fill="#d9f99d" font-family="Inter,Segoe UI,Arial" font-size="16">/v1/responses</text>
+    <rect x="485" y="190" width="250" height="210" rx="30" fill="url(#card)" stroke="#67e8f9" stroke-opacity="0.75"/>
+    <text x="610" y="270" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial" font-size="32" font-weight="800">Proxy</text>
+    <text x="610" y="307" text-anchor="middle" fill="#a5f3fc" font-family="Inter,Segoe UI,Arial" font-size="17">streaming translator</text>
+    <text x="610" y="338" text-anchor="middle" fill="#c4b5fd" font-family="Inter,Segoe UI,Arial" font-size="15">tools • SSE • errors</text>
+    <rect x="900" y="220" width="230" height="150" rx="24" fill="url(#card)" stroke="#fef08a" stroke-opacity="0.55"/>
+    <text x="1015" y="270" text-anchor="middle" fill="#fff" font-family="Inter,Segoe UI,Arial" font-size="25" font-weight="700">国产模型</text>
+    <text x="1015" y="306" text-anchor="middle" fill="#fef9c3" font-family="Inter,Segoe UI,Arial" font-size="15">DeepSeek · Qwen · Kimi</text>
+    <text x="1015" y="332" text-anchor="middle" fill="#fef9c3" font-family="Inter,Segoe UI,Arial" font-size="15">GLM · Baichuan · Yi</text>
+  </g>
+  <path d="M310 295 C390 295,405 295,475 295" fill="none" stroke="#a7f3d0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M725 295 C805 295,820 295,890 295" fill="none" stroke="#fde68a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M465 282 L485 295 L465 308" fill="none" stroke="#a7f3d0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M880 282 L900 295 L880 308" fill="none" stroke="#fde68a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="392" y="260" fill="#d1fae5" font-family="Inter,Segoe UI,Arial" font-size="14">Responses SSE</text>
+  <text x="775" y="260" fill="#fef3c7" font-family="Inter,Segoe UI,Arial" font-size="14">Anthropic / OpenAI Chat</text>
+</svg>
