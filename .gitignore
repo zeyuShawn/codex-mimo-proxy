@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+proxy.log
+proxy_debug.log
