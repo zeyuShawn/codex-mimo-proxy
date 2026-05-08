@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="380" viewBox="0 0 1100 380" role="img" aria-labelledby="title desc">
+<title id="title">codex-proxy flow</title><desc id="desc">Request, translation, upstream streaming, and response events.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eef2ff"/><stop offset="1" stop-color="#ecfeff"/></linearGradient></defs>
+<rect width="1100" height="380" rx="28" fill="url(#g)"/>
+<g font-family="Inter,Segoe UI,Arial">
+  <text x="48" y="58" font-size="30" font-weight="800" fill="#172554">Streaming lifecycle</text>
+  <g fill="#fff" stroke="#93c5fd" stroke-width="2">
+    <rect x="50" y="105" width="210" height="150" rx="22"/><rect x="315" y="105" width="210" height="150" rx="22"/><rect x="580" y="105" width="210" height="150" rx="22"/><rect x="845" y="105" width="210" height="150" rx="22"/>
+  </g>
+  <g fill="#0f172a" font-size="21" font-weight="700"><text x="155" y="150" text-anchor="middle">1. 接收</text><text x="420" y="150" text-anchor="middle">2. 转换</text><text x="685" y="150" text-anchor="middle">3. 上游</text><text x="950" y="150" text-anchor="middle">4. 回传</text></g>
+  <g fill="#475569" font-size="15"><text x="155" y="185" text-anchor="middle">Codex Responses input</text><text x="420" y="185" text-anchor="middle">messages / tools / system</text><text x="685" y="185" text-anchor="middle">CCR 或 OpenAI 兼容 API</text><text x="950" y="185" text-anchor="middle">Responses SSE events</text></g>
+  <g stroke="#2563eb" stroke-width="5" stroke-linecap="round" fill="none"><path d="M268 180H306"/><path d="M533 180H571"/><path d="M798 180H836"/></g>
+  <g fill="#2563eb"><path d="M303 170l16 10-16 10z"/><path d="M568 170l16 10-16 10z"/><path d="M833 170l16 10-16 10z"/></g>
+  <text x="155" y="225" text-anchor="middle" fill="#64748b" font-size="13">POST /v1/responses</text><text x="420" y="225" text-anchor="middle" fill="#64748b" font-size="13">Anthropic or Chat payload</text><text x="685" y="225" text-anchor="middle" fill="#64748b" font-size="13">SSE chunks</text><text x="950" y="225" text-anchor="middle" fill="#64748b" font-size="13">tool calls + text deltas</text>
+</g></svg>
